@@ -1,0 +1,49 @@
+.nav_container{
+
+    display: flex;
+align-items: center;
+    list-style: none;
+
+    gap: 74px;
+ 
+    font-family: Poppins;
+    justify-content: space-between;
+
+   
+    a{
+        text-decoration: none;
+        color: var(--grey);
+      
+       
+       font-weight: 400;
+       font-size: 16px;
+   
+       transition: .1s;
+
+       
+     
+        
+    }
+
+    a:last-child{
+    background-color: var(--blue);
+    width: 142px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 400;
+   
+   
+    }
+}
+
+a.active{
+   
+   
+   font-weight: 600;
+  
+
+ 
+}
