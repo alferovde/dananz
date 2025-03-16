@@ -3,16 +3,22 @@ import NavigationMenuComponent from '../NavigationMenuComponent/NavigationMenuCo
 import logo from '../../img/logo.svg'
 import style from './header.module.scss'
 import { NavLink } from 'react-router'
+import { IWindowSize } from '../../Interfaces/anyInterfaces'
+import NavigationMobileMenuComponent from '../NavigationMobileMenuComponent/NavigationMobileMenuComponent'
 
-const Header = () => {
+const Header = ({innerWidth,innerHeight }:IWindowSize) => {
   return (
-    <header className={`${style.header} container `}>
+    <header className={`${style.header}`}>
+      <div className={`${style.header__inner} container `}>
       <div className={style.logo}>
         <NavLink to={'/'}><img src={logo} alt="logo" /></NavLink>
         
       </div>
 
-      <NavigationMenuComponent/>
+       {innerWidth! > 768 ? <NavigationMenuComponent/> : <NavigationMobileMenuComponent/>}
+      </div>
+      
+      
     </header>
   )
 }

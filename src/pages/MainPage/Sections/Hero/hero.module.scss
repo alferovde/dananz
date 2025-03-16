@@ -1,0 +1,173 @@
+.hero{
+position: relative;
+margin-top: 150px;
+    
+}
+
+.hero__header{
+    position: relative;
+    margin: 70px 0 50px;
+    display: flex;  
+    
+    &::after{
+          
+        content: "";
+        position: absolute;
+        right: 0px;
+        top: 50px;
+       background-color: var(--black);
+        height: 2px;
+        width: 50%;
+        transition: width .2s ;
+       
+    }
+  
+    h1{
+        // font-size: 72px;
+        max-width: 55%;
+        color: var(--grey);
+
+        font-size: clamp(40px, 6.0185185185vw - .0138888889rem,72px);
+        transition: font-size .2s ;
+    }
+
+   
+}
+
+
+
+.hero__footer{
+position: relative;
+    img{
+        max-width: 100%;
+    }
+
+
+    .header__rights{
+      
+        width:200px;
+        height: 50px;
+        text-transform: uppercase;
+    
+        transform: rotate(270deg);
+    
+        position: absolute;
+    
+        right: -75px;
+        top: -180px;
+    }
+}
+
+.hero__statistic{
+  
+   
+    position: absolute;
+
+    top: 150px;
+    right: 150px;
+}
+
+.hero__statistic_row{
+    position: static;
+    max-width: 100%;
+    margin-top: -7px;
+
+
+}
+
+
+@media (max-width: 900px) {
+    .hero__footer{
+     
+        
+            .header__rights{
+
+                font-size: 14px;
+              
+        
+            }
+        }
+
+
+}
+
+@media (max-width: 926px) {
+    .hero__statistic{
+  
+   
+        position: absolute;
+    
+        top: 100px;
+        right: 100px;
+
+        
+
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+    .hero__footer{
+        position: relative;
+            img{
+                max-width: 100%;
+            }
+        
+        
+            .header__rights{
+              
+                width:200px;
+                height: 50px;
+                text-transform: uppercase;
+            
+                transform: rotate(0deg);
+            
+                position: absolute;
+            
+                right: 5px;
+                top: -50px;
+            }
+        }
+
+}
+
+@media (max-width: 576px) {
+    .hero__header{
+        position: relative;
+        margin: 70px 0 50px;
+        display: flex;  
+        text-align:center;
+        
+        &::after{
+              
+           display: none;
+           
+        }
+      
+        h1{
+            font-size: 52px;
+            max-width: 100%;
+            color: var(--grey);
+    
+            
+        }
+    
+       
+    }
+
+    .hero__footer{
+        position: relative;
+            img{
+                max-width: 100%;
+            }
+        
+        
+            .header__rights{
+              
+                display: none;
+            }
+        }
+
+}
