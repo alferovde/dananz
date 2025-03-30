@@ -4,7 +4,7 @@ import style from './button.module.scss'
 const Button = ({children}:IButton) => {
   return (
     <button className={style.button_blue}>
-      
+      {children}
     </button>
   )
 }
