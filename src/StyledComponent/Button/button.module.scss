@@ -8,3 +8,15 @@
     font-weight: 400;
     font-family: 'Poppins';
 }
+
+.button_transparent{
+    width: 142px;
+    height: 49px;
+    color: var(--black);
+    background-color: var(--white);
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins';
+    border: 1px solid  var(--black);
+}

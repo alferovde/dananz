@@ -8,7 +8,7 @@ const Hero = ({innerWidth}:IWindowSize) => {
 
 
   return (
-    <section className={style.hero}>
+    <section className={`${style.hero} container`}>
       <div className={style.hero__header}>
         <h1>Design your interor with high quality.</h1>
 

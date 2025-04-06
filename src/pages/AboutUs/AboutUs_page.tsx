@@ -1,10 +1,10 @@
 import React from 'react'
-
+import style from './aboutpage.module.scss'
 const AboutUs_page = () => {
   return (
-    <div>
+    <main className={style.about_page}>
       AboutUs_page
-    </div>
+    </main>
   )
 }
 
