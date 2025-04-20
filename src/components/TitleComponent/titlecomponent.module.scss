@@ -9,17 +9,6 @@
         
        
 
-        &::after{
-            position: absolute;
-            content: '';
-            max-width: 80%;
-            width: 500px;
-            height: 2px;
-           background-color: var(--black);;
-            top: 10px;
-            left: 90px;
-            transition: max-width .5s ease;
-        }
     }
 
     h3{
@@ -36,6 +25,19 @@
       
     }
 }
+
+.title_component__header{
+    display: flex;
+    align-items: center;
+}
+
+.title_component__header_line{
+    width: 516px;
+    height: 2px;
+margin-left: 20px;
+    background-color:var(--black) ;
+}
+
 
 .title_component__description_bottom{
     display: flex;

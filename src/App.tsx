@@ -38,7 +38,7 @@ function App() {
       <Header {...windowSize} />
       <Routes>
         <Route path="/" element={<MainPage_page {...windowSize} />} />
-        <Route path="/about" element={<AboutUs_page />} />
+        <Route path="/about" element={<AboutUs_page {...windowSize} />} />
 
       </Routes>
       <Footer />

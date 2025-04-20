@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './statistic.module.scss'
 import { IWindowSize } from '../../Interfaces/anyInterfaces'
-const StatisticComponent = ({innerWidth}:IWindowSize) => {
+const StatisticComponent = ({innerWidth, position}:IWindowSize) => {
 
     
  
@@ -9,7 +9,7 @@ const StatisticComponent = ({innerWidth}:IWindowSize) => {
  
 
     return (
-        <ul className={innerWidth! > 851 ? style.static_container_colomn : style.static_container_row }>
+        <ul className={innerWidth! > 851 || position == 'colomn' ? style.static_container_colomn : style.static_container_row }>
             <li>
                 <span>350+</span>
                 <div className={style.static_text}>Project Completed</div>
