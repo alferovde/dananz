@@ -1,0 +1,161 @@
+.card_left{
+    display: flex;
+    gap: 15px;
+}
+
+.card_left_img{
+    position: relative;
+width: 80%;
+    img{
+        max-width: 100%;
+    }
+}
+
+.card_left_data{
+width: 20%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-top: 50px;
+
+h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 18px;
+    color: var(--light_grey);
+    line-height: 160%;
+    margin-bottom: 40px;
+}
+
+}
+
+.card_left_user{
+position: absolute;
+top: 30px;
+right: calc(-45% + 20em) ;
+img{
+    width: 50px;
+}
+}
+
+
+
+.card_right{
+   
+    display: flex;
+    gap: 15px;
+}
+
+.card_right_img{
+    position: relative;
+    width: 80% ;
+
+    img{
+        max-width: 100%;
+    }
+}
+
+.card_right_user{
+    position: absolute;
+top: 30px;
+left: calc(-20% + 5em) ;
+img{
+    width: 50px;
+}
+}
+
+.card_right_data{
+    width: 20%;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+padding-top: 50px;
+
+h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 18px;
+    color: var(--light_grey);
+    line-height: 160%;
+    margin-bottom: 40px;
+}
+}
+
+
+@media (max-width: 967px){
+    .card_left_data, .card_right_data{
+        
+        
+        padding-top: 0px;
+        
+        h3{
+            font-size: 18px;
+            
+        }
+        
+        p{
+            font-size: 14px;
+            
+        }
+        
+        }
+}
+
+@media (max-width: 768px){
+    .card_left{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .card_left_data{
+        
+        
+        padding-top: 0px;
+        width: 100%;
+        
+        h3{
+            font-size: 18px;
+            
+        }
+        
+        p{
+            font-size: 14px;
+            
+        }
+
+        button{
+            width: 100%;
+        }
+        
+        }
+
+        .card_left_img{
+            position: relative;
+        width: 100%;
+            img{
+                max-width: 100%;
+            }
+        }
+
+        .card_left_user{
+           
+
+            position: absolute;
+            bottom:  100px;
+          
+
+            
+            right: 0;
+            img{
+                width: 50px;
+            }
+        }
+}

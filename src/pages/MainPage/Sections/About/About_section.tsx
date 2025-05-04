@@ -5,7 +5,9 @@ import about_img from '../../../../img/about_section.png'
 import Button from '../../../../StyledComponent/Button/Button'
 import SmallCartComponent from '../../../../StyledComponent/SmallCartComponent/SmallCartComponent'
 import user from '../../../../img/user_img.png'
+import { NavLink, Route, useNavigate } from 'react-router'
 const About_section = () => {
+  const navigate = useNavigate()
   return (
     <section className={`${style.about__section} container`}>
         <TitleComponent title='about' text="“We're one of the best furniture agency. Prioritizing customers and making purchases easy are the hallmarks of our agency.”" position='bottom' />
@@ -18,7 +20,7 @@ const About_section = () => {
           </div>
           <div className={style.about__description}>
             <p>Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.</p>
-            <Button type='blue'>Learn More</Button>
+            <Button type='blue' onClick={()=> navigate("/portfolio") } >Learn More</Button>
           </div>
         </div>
       

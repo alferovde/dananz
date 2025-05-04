@@ -12,19 +12,13 @@ const NavigationMobileMenuComponent = () => {
   
     setHiddenMenu(prev=>!prev)
 
-    // if(hiddenMenu){
-    //   setTimeout(()=>{
-    //     setHiddenMenu(prev=>!prev)
-    //   },1000)
-    // }else{
-    //   setHiddenMenu(prev=>!prev)
-    // }
+ 
   }
 
   const renderMenu = ():React.ReactNode => {
    
     return navigationMenu.map(item=>{
-        return <NavLink key={item.id} to={item.link} className={({ isActive }) =>
+        return <NavLink key={item.id} onClick={()=>setHiddenMenu(prev=>!prev)} to={item.link} className={({ isActive }) =>
             isActive ? style.active : ""
           }> {item.text}  </NavLink>
     })

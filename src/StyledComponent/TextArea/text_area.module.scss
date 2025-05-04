@@ -1,0 +1,16 @@
+.text_area{
+display: flex;
+flex-direction: column;
+label{
+    font-size: 18px;
+    font-weight: 600;
+}
+textarea{
+    margin-top: 15px;
+    padding: 20px 30px; 
+    box-sizing: border-box;
+    font-size: 16px;
+    color: var(--light_grey);
+    outline: none;
+}
+}

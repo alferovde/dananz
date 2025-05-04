@@ -8,6 +8,12 @@ import AboutUs_page from './pages/AboutUs/AboutUs_page';
 import { IWindowSize } from './Interfaces/anyInterfaces';
 import 'animate.css'
 
+import Services_page from './pages/Services/Services_page';
+import OurTeam_page from './pages/OurTeam/OurTeam_page';
+import Contacts_page from './pages/Contacts/Contacts_page';
+import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
+import PortfolioID_page from './pages/PortfolioID/PortfolioID_page';
+
 function App() {
 
   const [windowSize, setWindowSize] = useState<IWindowSize>(getWindowSize() );
@@ -39,6 +45,12 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage_page {...windowSize} />} />
         <Route path="/about" element={<AboutUs_page {...windowSize} />} />
+        <Route path="/services" element={<Services_page {...windowSize} />} />
+        <Route path="/teams" element={<OurTeam_page {...windowSize} />} />
+        <Route path="/contact" element={<Contacts_page {...windowSize} />} />
+        <Route path="/portfolio" element={<PortfolioPage {...windowSize} />} />
+        <Route path="/portfolio/:id" element={<PortfolioID_page {...windowSize} />} />
+
 
       </Routes>
       <Footer />
